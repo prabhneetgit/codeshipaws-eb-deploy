@@ -30,7 +30,7 @@
 #          - name: S3, CP
 #            command: aws s3 cp /deploy/upload_to_s3 s3://elasticbeanstalk-us-east-1-398437307342
           - name: Elastic Beanstalk
-            command: codeship_aws_eb_deploy /deploy/eb-py-flask-signup-docker-v1.0 codeship-signup-form Test-env s3://elasticbeanstalk-us-east-1-398437307342
+            command: codeship_aws eb_deploy /deploy/ codeship-signup-form Test-env s3://elasticbeanstalk-us-east-1-398437307342
 #            command: /deploy/test/elastic_beanstalk/integration-test
 #          - name: Code Deploy
 #            command: /deploy/test/code_deploy/integration-test	  
