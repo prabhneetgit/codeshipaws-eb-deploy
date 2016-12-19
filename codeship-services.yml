@@ -33,5 +33,7 @@ awsdeployment:
     path: ./deployment
     dockerfile_path: Dockerfile
   encrypted_env_file: aws-deployment.env.encrypted
+  environment:
+    - AWS_DEFAULT_REGION=us-east-1
   volumes:
     - ./deployment:/deploy
